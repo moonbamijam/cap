@@ -1,0 +1,41 @@
+feature:
+- head-branch: feature
+
+fix:
+- head-branch: fix
+
+release: 
+- head-branch: release
+
+chore:
+- head-branch: 
+    - chore
+    - refactor
+
+ui/ux:
+- changed-files:
+  - any-glob-to-any-file:
+    - frontend/**
+    - public/**
+
+server: 
+- changed-files:
+  - any-glob-to-any-file: 
+    - backend/**
+
+devops:
+- head-branch: release
+- changed-files:
+  - any-glob-to-any-file:
+    - .github/**
+    - .husky/**
+
+documentation:
+- head-branch: docs
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
+
+dependencies:
+- head-branch: deps
+- changed-files:
+  - any-glob-to-any-file: 'pnpm-lock.yaml'
