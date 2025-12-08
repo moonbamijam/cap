@@ -4,3 +4,6 @@ pnpm*.yaml
 node_modules
 .github
 .husky
+
+# Files specific
+sample-env.config.ts
