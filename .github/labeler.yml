@@ -1,5 +1,7 @@
 feature:
-- head-branch: feature
+- head-branch: 
+    - feature
+    - feat
 
 fix:
 - head-branch: fix
@@ -38,4 +40,5 @@ documentation:
 dependencies:
 - head-branch: deps
 - changed-files:
+
   - any-glob-to-any-file: 'pnpm-lock.yaml'
