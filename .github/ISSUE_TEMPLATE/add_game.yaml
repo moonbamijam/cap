@@ -6,40 +6,44 @@ labels: "feature"
 body:
 - type: markdown
   attributes:
-    value: "# Add a game"
-- type: markdown
-  attributes:
     value: |
       ## Thanks for taking the time to add a game you want to see to CAP!
-      Please provide at least short description of why we should add this game.
-
-body:
+      #### Please provide at least short description of why we should add this game.
 - type: textarea
   id: description
   attributes:
     label: Description
     render: bash
-  validatoins:
-    required: true
-
-body:
-- type: input
-- id: banner
-  attributes:
-    label: Banner
-    description: |
-      Provide a image or gif of this game that you want to suggest as a background.
-      Note that we do not guarantee that we will use this as the official background for the game you suggest.
-      There's a chance that we'll use it but the sole purpose of this is for reference only.
   validations:
     required: true
 
-body:
+- type: markdown
+  attributes:
+    value: "#### Provide a image or gif of this game that you want to suggest as a background."
+- type: input
+  id: banner
+  attributes:
+    label: Banner
+    description: |
+      > [!NOTE]
+      > We do not guarantee that we will use this as the official background for the game you suggest.
+      > The sole purpose of this is for reference only, if we didn't find a much better banner, we will use
+      > your provided banner instead.
+    placeholder: "Paste the image address here"
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: "#### Provide the related genre to this game"
 - type: textarea
   id: genre
   attributes:
     label: Genre
-    description: "Provide the related genre to this game(seperated by comma)."
+    description: |
+      > [!NOTE]
+      > Try to be as accurate as possible though we will still research the most accurate genre for this game.
+      > This will just speedup the process.
     render: bash
   validations:
     required: true
