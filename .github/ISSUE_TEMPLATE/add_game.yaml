@@ -13,7 +13,6 @@ body:
       ## Thanks for taking the time to add a game you want to see to CAP!
       Please provide at least short description of why we should add this game.
 
-body:
 - type: textarea
   id: description
   attributes:
@@ -22,9 +21,8 @@ body:
   validatoins:
     required: true
 
-body:
 - type: input
-- id: banner
+  id: banner
   attributes:
     label: Banner
     description: |
@@ -34,7 +32,6 @@ body:
   validations:
     required: true
 
-body:
 - type: textarea
   id: genre
   attributes:
