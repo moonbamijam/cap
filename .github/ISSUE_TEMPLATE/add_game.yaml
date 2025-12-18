@@ -1,9 +1,7 @@
----
 name: Add game
 description: Add a new game
 title: "Game name"
 labels: "feature"
----
 
 body:
 - type: markdown
