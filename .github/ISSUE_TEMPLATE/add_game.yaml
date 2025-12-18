@@ -1,22 +1,14 @@
----
 name: Add game
 description: Add a new game
 title: "Game name"
 labels: "feature"
 body:
-- type: markdown
-  attributes:
-    value: |
-      
-      
-      ## Thanks for taking the time to add a game you want to see to CAP!
-
 - type: textarea
   id: description
   attributes:
     label: Description
     description: |
-      > Please provide at least short description of why we should add this game.
+      #### Please provide at least short description of why we should add this game.
     render: bash
   validations:
     required: true
@@ -26,7 +18,7 @@ body:
   attributes:
     label: Banner
     description: |
-      "#### Provide a image or gif of this game that you want to suggest as a background."
+      #### Provide a image or gif of this game that you want to suggest as a background.
       > **Note:** We do not guarantee that we will use this as the official background for the game you suggest.
       > The sole purpose of this is for reference only, if we didn't find a much better banner, we will use
       > your provided banner instead.
@@ -39,7 +31,7 @@ body:
   attributes:
     label: Genre
     description: |
-      "#### Provide the related genre to this game"
+      #### Provide the related genre to this game
       > **Note:** Try to be as accurate as possible though we will still research the most accurate genre for this game.
       > This will just speedup the process.
     render: bash
