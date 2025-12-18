@@ -7,8 +7,8 @@ body:
 - type: markdown
   attributes:
     value: |
-      ### Thanks for taking the time to add a game you want to see to CAP!
-      Please provide at least short description of why we should add this game.
+      # Thanks for taking the time to add a game you want to see to CAP!
+      ### Please provide at least short description of why we should add this game.
 - type: textarea
   id: description
   attributes:
@@ -19,7 +19,7 @@ body:
 
 - type: markdown
   attributes:
-    value: "Provide a image or gif of this game that you want to suggest as a background."
+    value: "### Provide a image or gif of this game that you want to suggest as a background."
 - type: input
   id: banner
   attributes:
@@ -35,7 +35,7 @@ body:
 
 - type: markdown
   attributes:
-    value: "Provide the related genre to this game"
+    value: "### Provide the related genre to this game"
 - type: textarea
   id: genre
   attributes:
