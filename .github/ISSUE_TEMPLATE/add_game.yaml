@@ -1,9 +1,7 @@
----
 name: Add game
-about: Add or request a feature
+description: Add a new game
 title: "Game name"
 labels: "feature"
----
 
 body:
 - type: markdown
@@ -12,8 +10,17 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thanks for taking the time to add a game you want to see to CAP!
+      ## Thanks for taking the time to add a game you want to see to CAP!
       Please provide at least short description of why we should add this game.
+
+body:
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    render: bash
+  validatoins:
+    required: true
 
 body:
 - type: input
@@ -33,6 +40,6 @@ body:
   attributes:
     label: Genre
     description: "Provide the related genre to this game(seperated by comma)."
-  render: bash
+    render: bash
   validations:
     required: true
