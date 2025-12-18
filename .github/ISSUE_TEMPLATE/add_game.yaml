@@ -29,6 +29,7 @@ body:
       Provide a image or gif of this game that you want to suggest as a background.
       Note that we do not guarantee that we will use this as the official background for the game you suggest.
       There's a chance that we'll use it but the sole purpose of this is for reference only.
+    placeholder: "Image address of the image/gif"
   validations:
     required: true
 
