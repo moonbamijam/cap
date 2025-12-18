@@ -3,15 +3,13 @@ name: Add game
 description: Add a new game
 title: "Game name"
 labels: "feature"
----
-
----
 body:
 - type: markdown
   attributes:
     value: |
+      
+      
       ## Thanks for taking the time to add a game you want to see to CAP!
----
 
 - type: textarea
   id: description
