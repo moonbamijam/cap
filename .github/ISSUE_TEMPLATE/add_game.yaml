@@ -18,7 +18,7 @@ body:
   attributes:
     label: Description
     render: bash
-  validatoins:
+  validations:
     required: true
 
 - type: input
