@@ -37,3 +37,8 @@ body:
     render: bash
   validations:
     required: true
+
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to help CAP improve by adding this game!
