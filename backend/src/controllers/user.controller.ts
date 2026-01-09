@@ -5,7 +5,7 @@ import {
 } from "../shared/utils/http-response.helper.js";
 import { UserModel } from "../models/user.model.js";
 import type { CapUser } from "../shared/types/user.types.js";
-import { createToken } from "../shared/utils/create-token.js";
+import { createToken } from "../shared/utils/create-token.utils.js";
 
 export const signupUser = async (req: { body: CapUser }, res: Response) => {
   const { username, email, password } = req.body;
