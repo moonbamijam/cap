@@ -1,0 +1,45 @@
+const reservedUsernameList: string[] = [
+  "cap",
+  "admin",
+  "administrator",
+  "root",
+  "system",
+  "support",
+  "help",
+  "contact",
+  "info",
+  "moderator",
+  "staff",
+  "owner",
+  "manager",
+  "superuser",
+  "operator",
+  "webmaster",
+  "security",
+  "service",
+  "api",
+] as const;
+
+const bannedUsernameList: string[] = [
+  "user",
+  "username",
+  "test",
+  "guest",
+  "null",
+  "undefined",
+  "void",
+  "anonymous",
+  "member",
+  "client",
+  "customer",
+  "home",
+  "about",
+  "login",
+  "logout",
+  "signup",
+  "bot",
+  "robot",
+] as const;
+
+export const RESERVED_USERNAMES_SET = new Set<string>(reservedUsernameList);
+export const BANNED_USERNAMES_SET = new Set<string>(bannedUsernameList);
