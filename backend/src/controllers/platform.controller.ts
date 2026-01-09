@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {
   getClientErrorResponse,
   getSuccessResponse,
-} from "../shared/utils/http-response.helper.js";
+} from "../shared/utils/http-response.utils.js";
 
 export const getPlatforms = async (req: Request, res: Response) => {
   const result = await PlatformModel.find();

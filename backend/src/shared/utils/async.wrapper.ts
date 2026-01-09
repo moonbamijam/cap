@@ -1,5 +1,5 @@
 import type { RequestHandler } from "express";
-import { getServerErrorResponse } from "./http-response.helper.js";
+import { getServerErrorResponse } from "./http-response.utils.js";
 import { CapError } from "../lib/error.js";
 import type { AsyncControllerType } from "../types/http/http.types.js";
 

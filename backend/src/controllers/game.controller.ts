@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {
   getClientErrorResponse,
   getSuccessResponse,
-} from "../shared/utils/http-response.helper.js";
+} from "../shared/utils/http-response.utils.js";
 import type { CapGame } from "../shared/types/game.types.js";
 
 export const getGames = async (req: Request, res: Response) => {

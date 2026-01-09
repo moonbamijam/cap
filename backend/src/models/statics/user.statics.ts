@@ -6,7 +6,7 @@ import {
   BANNED_USERNAMES_SET,
   RESERVED_USERNAMES_SET,
 } from "../../shared/config/usernames.config.js";
-import { getClientErrorResponse } from "../../shared/utils/http-response.helper.js";
+import { getClientErrorResponse } from "../../shared/utils/http-response.utils.js";
 import { CapError } from "../../shared/lib/error.js";
 
 export const userStatics = {

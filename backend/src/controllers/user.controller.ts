@@ -2,7 +2,7 @@ import type { Response } from "express";
 import {
   getClientErrorResponse,
   getSuccessResponse,
-} from "../shared/utils/http-response.helper.js";
+} from "../shared/utils/http-response.utils.js";
 import { UserModel } from "../models/user.model.js";
 import type { CapUser } from "../shared/types/user.types.js";
 import { createToken } from "../shared/utils/create-token.utils.js";
