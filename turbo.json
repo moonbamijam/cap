@@ -5,11 +5,12 @@
       "persistent": true
     },
     "start": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "env": ["MONGODB_URI", "PORT", "BACKEND_URL", "FRONTEND_URL", "VITE_URL"]
     },
     "build": {
       "dependsOn": ["^build"],
-      "env": ["PORT", "API", "MONGODB_URI"]
+      "env": ["MONGODB_URI", "PORT", "BACKEND_URL", "FRONTEND_URL", "VITE_URL"]
     }
   }
 }
