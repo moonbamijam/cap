@@ -2,26 +2,36 @@
   "name": "cap",
   "author": "Jam Moonbami",
   "version": "0.0.0",
-  "description": "Connect and Play",
+  "private": true,
+  "description": "Find your friends across this world full of games!",
+  "packageManager": "pnpm@10.23.0",
   "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
     "prepare": "husky",
     "pre-commit": "lint-staged",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretty": "prettier --write"
   },
   "keywords": [
     "cap",
-    "connect and play"
+    "connect",
+    "play"
   ],
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "eslint": "^9.39.1",
+    "@eslint/compat": "^2.0.0",
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "jiti": "^2.6.1",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.6.2",
-    "typescript-eslint": "^8.47.0"
+    "prettier": "^3.7.4",
+    "turbo": "^2.7.2",
+    "typescript-eslint": "^8.50.1"
   },
   "lint-staged": {
     "*.{ts,tsx,json,css,html}": "prettier --write",
